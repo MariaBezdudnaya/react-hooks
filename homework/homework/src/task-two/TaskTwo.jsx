@@ -1,5 +1,5 @@
 import React from 'react';
-import { memo, useMemo, useCallback, useState } from 'react';
+import { memo, useCallback, useState } from 'react';
 import RenderCounter from './render-counter/RenderCounter';
 import './TaskTwo.css';
 
