@@ -2,7 +2,6 @@ import './App.css';
 import {ComponentsWrapper} from './components-wrapper/ComponentsWrapper';
 import TaskOne from './task-one/TaskOne';
 import TaskTwo from './task-two/TaskTwo';
-// import TaskThreeCopy from './task-three/TaskThreeCopy';
 import TaskThree from './task-three/TaskThree';
 
 function App() {

@@ -12,8 +12,8 @@ const useCustomHook = (search) => {
         try {
             const response = await fetch(`https://jsonplaceholder.typicode.com/posts?search=${search}`, { signal: abortController.signal });
             const data = await response.json();
-            console.log(data);
-            setPosts(data);
+            const filteredData = data.filter((item) => item.title.includes(search));
+            setPosts(filteredData);
         } catch (error) {
             setError(error.message);
         } finally {
@@ -35,7 +35,7 @@ const useCustomHook = (search) => {
     return { posts, loading, error, fetchData };
 };
 
-export default function TaskThree() {
+export default function TaskThreeLast() {
     const [search, setSearch] = useState('');
     const { posts, loading, error, fetchData } = useCustomHook(search);
 
